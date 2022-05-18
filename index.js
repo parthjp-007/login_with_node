@@ -1,5 +1,8 @@
 const express = require("express");
+const cors = require("cors");
 var app = express();
+
+app.use(cors());
 require("./db/mongo");
 var productRouter = require("./route/crud");
 

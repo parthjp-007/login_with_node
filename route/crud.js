@@ -1,6 +1,6 @@
 const express = require("express");
 const route = express.Router();
-const Login = require("C:\\Users\\Admin\\OneDrive\\Desktop\\login\\model\\schema.js");
+const Login = require("../model/schema");
 
 const joi = require("joi");
 
@@ -26,7 +26,7 @@ const validation = (req, res, next) => {
         }
     }
 
-route.post("/login", async (req, res) => {
+route.post("/login", validation, async (req, res) => {
   try {
       console.log("req.body>>>>>>>>>",req.body);
     const { name, password } = req.body;
