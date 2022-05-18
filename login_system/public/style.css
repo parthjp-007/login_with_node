@@ -1,0 +1,29 @@
+body{
+    /* background-image: url('/assets/v714-bb-7.jpg'); */
+    background-image: url('/assets/v714-bb-7.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.center-div{
+    padding-top: 10%;
+}
+
+.btn.btn-primary{
+    padding: .4em 2em;
+}
+
+form{
+    padding: 0 3em;
+}
+
+#login .title >span{
+    font-size: .8em;
+    color: rgb(241, 192, 113);
+}
+
+#login .title{
+    color: rgb(217, 151, 200);
+}
